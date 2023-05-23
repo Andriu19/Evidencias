@@ -1,0 +1,18 @@
+package compilador;
+import java_cup.runtime.Symbol;// Java cup utiliza simbolos en lugar de tokens
+%unicode
+%line
+%column
+%class JFlap
+%public
+&cup
+%{
+public void mensaje (String cadena){
+for (int x=0; x < cadena length (); x++) {
+System.out.println(cadena.codePointAt(x));
+if (cadena.codePointAt(x)>=47 && cadena.codePointAt(x)<=57){
+System.out.println("  ¡Los numeros no son valido !");
+}
+}
+}
+%}

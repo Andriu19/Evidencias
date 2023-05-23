@@ -1,0 +1,39 @@
+cordigo 1:
+
+public class HolaMundo {
+	public static void main(String[] args) {		
+		System.out.println("Hola Mundo");
+	}
+}
+
+codigo 2:
+import java.util.Scanner;
+public class SumaNumeros
+{
+    public static void main( String[] args )
+    {
+        int n1, n2, suma;
+        Scanner teclado = new Scanner( System.in );
+        System.out.print( "Introduzca primer número: " );
+        n1 = teclado.nextInt();
+        System.out.print( "Introduzca segundo número: " );
+        n2 = teclado.nextInt();
+        suma = n1 + n2;
+        System.out.println( "La suma de " + n1 + " más " + n2 + " es " + suma + "." );
+    }
+}
+
+codigo 3:
+class DemoString
+{
+    public static void main(String args[])
+    {
+        //Declaración de String de diferentes maneras
+        String str1=new String("En Java, los String son objetos");
+        String str2=new String("Se construyen de varias maneras");
+        String str3=new String(str2);
+        System.out.println(str1);
+        System.out.println(str2);
+        System.out.println(str3);
+    }
+}
